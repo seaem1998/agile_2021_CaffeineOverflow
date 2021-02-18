@@ -2,35 +2,27 @@ package edu.cvtc.cmarek5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
-    private static final String TAG = "The App Has Been Created";
-
-    private TextView mMessageEditText;
+    private static final String TAG = "Activity 2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mMessageEditText = findViewById(R.id.main_textView);
+        Log.d(TAG, "Activity 2 - onCreate Method");
+        setContentView(R.layout.activity_second);
     }
 
-    // This is set up to make the HOME button work --Chantelle
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "Component Has Started");
-        Button submitButton = findViewById(R.id.button_home_submit);
+        Button submitButton = findViewById(R.id.button_contact_submit);
 
-        // This is the button listener --Chantelle
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Log.d(TAG, "Button Clicked");
