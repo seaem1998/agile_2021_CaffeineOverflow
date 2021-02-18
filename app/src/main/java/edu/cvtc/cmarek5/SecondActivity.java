@@ -2,6 +2,7 @@ package edu.cvtc.cmarek5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,7 +26,9 @@ public class SecondActivity extends AppCompatActivity {
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
                 Log.d(TAG, "Button Clicked");
+                startActivity(new Intent(SecondActivity.this, MainActivity.class));
             }
         });
     }

@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mMessageEditText = findViewById(R.id.main_textView);
     }
 
     // This is set up to make the HOME button work --Chantelle
@@ -33,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
         // This is the button listener --Chantelle
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
                 Log.d(TAG, "Button Clicked");
+                // This act like Navigation, Takes you to the second activity
+                startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
     }
