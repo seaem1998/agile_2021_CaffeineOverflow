@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "Activity 2 - onCreate Method");
         setContentView(R.layout.activity_second);
+        //Random
     }
 
     protected void onStart() {
