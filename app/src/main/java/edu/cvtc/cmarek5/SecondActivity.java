@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.jar.Attributes;
+
 public class SecondActivity extends AppCompatActivity {
 
     private static final String TAG = "Activity 2";
@@ -35,13 +37,6 @@ public class SecondActivity extends AppCompatActivity {
                 //Takes User back to the Home Page
                 startActivity(new Intent(SecondActivity.this, MainActivity.class));
 
-                // Get the Edit Texts --Chantelle
-                EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
-                EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
-
-                // Toast to Display the User Inputs
-                Toast.makeText(SecondActivity.this, "Your name is " + NameText + ". Your" +
-                        " total is " + TotalText, Toast.LENGTH_LONG).show();
             }
         });
 
@@ -53,9 +48,13 @@ public class SecondActivity extends AppCompatActivity {
                 EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
                 EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
 
+                // Convert Variables to a String
+                String userName = NameText.getText().toString();
+                String userTotal = TotalText.getText().toString();
+
                 // Toast to Display the User Inputs
-                Toast.makeText(SecondActivity.this, "Your name is " + NameText + ". Your" +
-                        " total is " + TotalText, Toast.LENGTH_LONG).show();
+                Toast.makeText(SecondActivity.this, "Your name is " + userName + ". Your" +
+                        " total is " + userTotal, Toast.LENGTH_LONG).show();
             }
         });
     }
