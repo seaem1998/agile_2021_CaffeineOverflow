@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +16,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "The App Has Been Created";
-
     private TextView mMessageEditText;
 
     @Override
@@ -22,20 +24,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // This is set up to make the HOME button work --Chantelle
-    protected void onStart() {
-        super.onStart();
-        Log.d(TAG, "Component Has Started");
-        Button submitButton = findViewById(R.id.button_home_submit);
+    // For the Main Menu --Chantelle
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
 
-        // This is the button listener --Chantelle
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+    // The intent that takes us to the specific activity (Main Menu) --Chantelle
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-                Log.d(TAG, "Button Clicked");
-                // This act like Navigation, Takes you to the second activity
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
-            }
-        });
+        switch (item.getItemId()) {
+            case R.id.action_activity_two:
+                Intent intentActivityTwo = new Intent(MainActivity.this, SecondActivity.class);
+                intentActivityTwo.putExtra("Message", "message 2");
+                startActivity(intentActivityTwo);
+                return true;
+            default:
+                // Do nothing
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
