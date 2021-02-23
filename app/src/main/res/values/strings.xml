@@ -2,4 +2,7 @@
     <string name="app_name">Loan Application</string>
     <string name="home_page_main_text">Home</string>
     <string name="activity2_name">Second Activity</string>
+    <string name="debts_page">Debts Page</string>
+    <string name="display_debts">Display Debts</string>
+    <string name="test">test test test test test test test test test test</string>
 </resources>
