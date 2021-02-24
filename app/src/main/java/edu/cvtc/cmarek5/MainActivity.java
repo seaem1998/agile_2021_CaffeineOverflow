@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         // This act like Navigation, Takes you to the debts activity
         // This is the button listener for debts -- Josh
         debtsButton.setOnClickListener(new View.OnClickListener() {
@@ -59,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
                 mContactInfo = "Contact name is " ;
 
-
-
-
                 // Sends contact info to ThirdActivity -- Josh
                 Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
                 intent.putExtra(EXTRA_MESSAGE, mContactInfo);
@@ -69,13 +65,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-
-
-
     }
+
+/* DON'T WORRY ABOUT THIS YET.
+    // For the Main Menu --Chantelle
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    // The intent that takes us to the specific activity (Main Menu) --Chantelle
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_activity_two:
+                Intent intentActivityTwo = new Intent(MainActivity.this, SecondActivity.class);
+                intentActivityTwo.putExtra(TAG, "message 2");
+                startActivity(intentActivityTwo);
+                return true;
+            case R.id.action_activity_three:
+                Intent intentActivityThree = new Intent(MainActivity.this, ThirdActivity.class);
+                intentActivityThree.putExtra(TAG, "message");
+                startActivity(intentActivityThree);
+                return true;
+            default:
+                // Do nothing
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+*/
+// Code Below this
+
+
+
 }
