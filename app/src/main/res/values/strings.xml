@@ -1,7 +1,23 @@
 <resources>
-    <string name="app_name">Loan Application</string>
+    <string name="app_name">Loan Tracker by Caffeine Overflow</string>
+
     <string name="home_page_main_text">Home</string>
+
     <string name="activity2_name">Second Activity</string>
+
+    <string name="home_action_label">Home</string>
+
+    <string name="action_contact_main_label">Contacts</string>
+
+    <string name="name_hint">Enter Your Name</string>
+
+    <string name="total_amount_hint">Total (USD)</string>
+
+    <string name="contact_main_label">Contacts</string>
+
+    <string name="contact_user_info_submit">Submit</string>
+
+
     <string name="debts_page">Debts Page</string>
     <string name="display_debts">Display Debts</string>
     <string name="test">test test test test test test test test test test</string>
