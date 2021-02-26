@@ -20,12 +20,35 @@
 
     <TextView
         android:id="@+id/textView_contact_info"
-        android:layout_width="135dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/contacts"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Debts_Label" />
+
+    <TextView
+        android:id="@+id/textView_debts_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="436dp"
+        android:textSize="30sp"
+        android:text="test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/label_spinner"
+
+        android:layout_width="267dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/textView_contact_info"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

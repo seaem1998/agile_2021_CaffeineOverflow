@@ -16,7 +16,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     // Key to send contact info to ThirdActivity --Josh
-    private String mContactInfo ="";
+     String mContactInfo =" Test test";
     public static final String EXTRA_MESSAGE = "edu.cvtc.cmarek5.secondactivity.extra.MESSAGE";
 
 
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         // This act like Navigation, Takes you to the debts activity
         // This is the button listener for debts -- Josh
+
         debtsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Log.d(TAG, "Debts button Clicked");
@@ -56,9 +57,19 @@ public class MainActivity extends AppCompatActivity {
                 EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
                 EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
 
-                mContactInfo = "Contact name is " ;
+                // Convert Variables to a String
+                //an issue with converting the edit texts to strings
+                // will crash the whole app
+
+                //String userName = NameText.getText().toString();
+               // String userTotal = TotalText.getText().toString();
+
+
 
                 // Sends contact info to ThirdActivity -- Josh
+                mContactInfo = "Contacts: " ;
+
+
                 Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
                 intent.putExtra(EXTRA_MESSAGE, mContactInfo);
 
@@ -66,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
 /* DON'T WORRY ABOUT THIS YET.
     // For the Main Menu --Chantelle
