@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "Component Has Started");
         Button submitButton = findViewById(R.id.button_home_submit);
         Button debtsButton = findViewById(R.id.button_debts);
+        //Button budgetButton = findViewById(R.id.create_budget_button);
 
         // This is the button listener --Chantelle
         submitButton.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +77,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+//        budgetButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//
+//                Log.d(TAG, "Button Clicked");
+//                // This act like Navigation, Takes you to the second activity
+//                //startActivity(new Intent(MainActivity.this, FourthActivity.class));
+//            }
+//        });
+
+    }
+
+    public void LaunchFourthActivity(View view) {
+        startActivity(new Intent(MainActivity.this, FourthActivity.class));
     }
 
 

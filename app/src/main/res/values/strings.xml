@@ -22,6 +22,12 @@
     <string name="display_debts">Display Debts</string>
     <string name="test">test test test test test test test test test test</string>
     <string name="contacts">Contacts:</string>
+    <string name="category1">Category</string>
+    <string name="create_budget">create budget</string>
+    <string name="category4">Category</string>
+    <string name="category3">Category</string>
+    <string name="category2">Category</string>
+
 
 
     <string-array name="labels_array">

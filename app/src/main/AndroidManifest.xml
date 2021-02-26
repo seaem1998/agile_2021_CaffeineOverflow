@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoanApplication">
-        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".FifthActivity"></activity>
+        <activity android:name=".FourthActivity" />
+        <activity android:name=".ThirdActivity" />
         <activity
             android:name=".SecondActivity"
             android:label="@string/activity2_name"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
+                android:value=".MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
