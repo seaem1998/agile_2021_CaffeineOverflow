@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -41,5 +44,37 @@ public class FourthActivity extends AppCompatActivity {
         });
 
     }
+
+//    // For the Main Menu --Chantelle
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.main_menu,menu);
+//        return true;
+//    }
+//
+//    // The intent that takes us to the specific activity (Main Menu) --Chantelle
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        switch (item.getItemId()) {
+//            case R.id.action_home:
+//                Intent intentActivityMain = new Intent(FourthActivity.this, MainActivity.class);
+//                intentActivityMain.putExtra("From Fourth Activity", "To Main Activity");
+//                startActivity(intentActivityMain);
+//                return true;
+//            case R.id.action_activity_three:
+//                Intent intentActivityThree = new Intent(FourthActivity.this, ThirdActivity.class);
+//                intentActivityThree.putExtra("From Fourth Activity", "To Third Activity");
+//                startActivity(intentActivityThree);
+//                return true;
+//            case R.id.action_activity_two:
+//                Intent intentActivityTwo = new Intent(FourthActivity.this, SecondActivity.class);
+//                intentActivityTwo.putExtra("From Fourth Activity", "To Second Activity");
+//                startActivity(intentActivityTwo);
+//                return true;
+//            default:
+//                // Do nothing
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
 }

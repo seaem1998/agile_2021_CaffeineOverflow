@@ -95,9 +95,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, FourthActivity.class));
     }
 
-
-
-/* DON'T WORRY ABOUT THIS YET.
     // For the Main Menu --Chantelle
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -111,24 +108,22 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_activity_two:
                 Intent intentActivityTwo = new Intent(MainActivity.this, SecondActivity.class);
-                intentActivityTwo.putExtra(TAG, "message 2");
+                intentActivityTwo.putExtra(TAG, "To Second Activity");
                 startActivity(intentActivityTwo);
                 return true;
             case R.id.action_activity_three:
                 Intent intentActivityThree = new Intent(MainActivity.this, ThirdActivity.class);
-                intentActivityThree.putExtra(TAG, "message");
+                intentActivityThree.putExtra(TAG, "To Third Activity");
                 startActivity(intentActivityThree);
+                return true;
+            case R.id.action_activity_four:
+                Intent intentActivityFour = new Intent(MainActivity.this, FourthActivity.class);
+                intentActivityFour.putExtra(TAG, "To Fourth Activity");
+                startActivity(intentActivityFour);
                 return true;
             default:
                 // Do nothing
         }
-
         return super.onOptionsItemSelected(item);
     }
-
-*/
-// Code Below this
-
-
-
 }

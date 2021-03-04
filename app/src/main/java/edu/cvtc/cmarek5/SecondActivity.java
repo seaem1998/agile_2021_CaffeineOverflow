@@ -17,7 +17,7 @@ import java.util.jar.Attributes;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private static final String TAG = "Activity 2";
+    private static final String TAG = "From Activity 2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,18 @@ public class SecondActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_home:
                 Intent intentActivityTwo = new Intent(SecondActivity.this, MainActivity.class);
-                intentActivityTwo.putExtra(TAG, "message 2");
+                intentActivityTwo.putExtra(TAG, "To Main Activity");
                 startActivity(intentActivityTwo);
+                return true;
+            case R.id.action_activity_three:
+                Intent intentActivityThree = new Intent(SecondActivity.this, ThirdActivity.class);
+                intentActivityThree.putExtra(TAG, "To Third Activity");
+                startActivity(intentActivityThree);
+                return true;
+            case R.id.action_activity_four:
+                Intent intentActivityFour = new Intent(SecondActivity.this, FourthActivity.class);
+                intentActivityFour.putExtra(TAG, "To Fourth Activity");
+                startActivity(intentActivityFour);
                 return true;
             default:
                 // Do nothing

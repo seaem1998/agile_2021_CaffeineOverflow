@@ -16,4 +16,9 @@
         android:orderInCategory="30"
         android:title="Debts"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_activity_four"
+        android:orderInCategory="40"
+        android:title="Budget"
+        app:showAsAction="never" />
 </menu>
