@@ -6,6 +6,7 @@
         android:orderInCategory="10"
         android:title="@string/home_action_label"
         app:showAsAction="never"/>
+
     <item
         android:id="@+id/action_activity_two"
         android:orderInCategory="20"
