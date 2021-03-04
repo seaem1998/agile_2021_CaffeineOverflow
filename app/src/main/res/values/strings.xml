@@ -7,8 +7,6 @@
 
     <string name="home_action_label">Home</string>
 
-    <string name="action_contact_main_label">Contacts</string>
-
     <string name="name_hint">Enter Your Name</string>
 
     <string name="total_amount_hint">Total (USD)</string>
@@ -27,7 +25,10 @@
     <string name="category4">Category</string>
     <string name="category3">Category</string>
     <string name="category2">Category</string>
-
+    <string name="contact_first_last_name">Enter Your First and Last Name</string>
+    <string name="contact_amount_label">Use (-) If You Owe Money, Use (+) If Someone Owes You Money</string>
+    <string name="button_contact_page">To Contacts</string>
+    <string name="button_budget_submit">CREATE BUDGET</string>
 
 
     <string-array name="labels_array">

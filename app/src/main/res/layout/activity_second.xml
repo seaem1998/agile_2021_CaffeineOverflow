@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <TextView
-        android:id="@+id/main_contact_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:text="@string/contact_main_label"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button_calcPayment"
         android:layout_width="wrap_content"
@@ -34,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Enter Your First and Last Name"
+        android:text="@string/contact_first_last_name"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editText_Name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Use (-) If You Owe Money, Use (+) If Someone Owes You Money"
+        android:text="@string/contact_amount_label"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editText_Total"
         app:layout_constraintEnd_toEndOf="parent"
