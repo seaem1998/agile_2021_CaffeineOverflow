@@ -60,36 +60,36 @@ public class ThirdActivity extends AppCompatActivity implements AdapterView.OnIt
 
     }
 
-//    // For the Main Menu --Chantelle
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.main_menu,menu);
-//        return true;
-//    }
-//
-//    // The intent that takes us to the specific activity (Main Menu) --Chantelle
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        switch (item.getItemId()) {
-//            case R.id.action_home:
-//                Intent intentActivityHome = new Intent(ThirdActivity.this, MainActivity.class);
-//                intentActivityHome.putExtra("From Third Activity", "To Main Activity");
-//                startActivity(intentActivityHome);
-//                return true;
-//            case R.id.action_activity_two:
-//                Intent intentActivityTwo = new Intent(ThirdActivity.this, SecondActivity.class);
-//                intentActivityTwo.putExtra("From Third Activity", "To Second Activity");
-//                startActivity(intentActivityTwo);
-//                return true;
-//            case R.id.action_activity_four:
-//                Intent intentActivityFour = new Intent(ThirdActivity.this, FourthActivity.class);
-//                intentActivityFour.putExtra("From Third Activity", "To Fourth Activity");
-//                startActivity(intentActivityFour);
-//                return true;
-//            default:
-//                // Do nothing
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    // For the Main Menu --Chantelle
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    // The intent that takes us to the specific activity (Main Menu) --Chantelle
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_home:
+                Intent intentActivityHome = new Intent(ThirdActivity.this, MainActivity.class);
+                intentActivityHome.putExtra("From Third Activity", "To Main Activity");
+                startActivity(intentActivityHome);
+                return true;
+            case R.id.action_activity_two:
+                Intent intentActivityTwo = new Intent(ThirdActivity.this, SecondActivity.class);
+                intentActivityTwo.putExtra("From Third Activity", "To Second Activity");
+                startActivity(intentActivityTwo);
+                return true;
+            case R.id.action_activity_four:
+                Intent intentActivityFour = new Intent(ThirdActivity.this, FourthActivity.class);
+                intentActivityFour.putExtra("From Third Activity", "To Fourth Activity");
+                startActivity(intentActivityFour);
+                return true;
+            default:
+                // Do nothing
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }
