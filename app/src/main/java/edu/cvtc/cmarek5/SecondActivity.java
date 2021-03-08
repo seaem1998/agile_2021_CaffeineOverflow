@@ -60,11 +60,7 @@ public class SecondActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*
-    THE BUTTON IS NOT WORKING ON THE CONTACT PAGE! NOT SURE WHY IT HAS SUDDENLY STOPPED!
-    I will get back to work on why it doesn't want to work. --Chantelle
-     */
-
+    // App is Back to Working and Everything Shifted
     // Buttons that Have a Purpose --Chantelle
     protected void onStart() {
         super.onStart();
