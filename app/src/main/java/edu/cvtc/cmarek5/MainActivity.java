@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG, "Debts button Clicked");
 
-                EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
-                EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
+                //EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
+                //EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
 
                 // Convert Variables to a String
                 //an issue with converting the edit texts to strings

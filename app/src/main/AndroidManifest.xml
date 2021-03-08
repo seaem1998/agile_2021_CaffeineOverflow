@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoanApplication">
-        <activity android:name=".FifthActivity"></activity>
-        <activity android:name=".FourthActivity" />
-        <activity android:name=".ThirdActivity" />
+        <activity
+            android:name=".FifthActivity"
+            android:label="Budget Planner"></activity>
+        <activity
+            android:name=".FourthActivity"
+            android:label="Budget Planner"/>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="Debts"/>
         <activity
             android:name=".SecondActivity"
-            android:label="@string/activity2_name"
-            android:parentActivityName=".MainActivity">
+            android:label="@string/activity2_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

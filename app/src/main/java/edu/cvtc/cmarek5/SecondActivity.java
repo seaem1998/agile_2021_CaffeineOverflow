@@ -60,6 +60,11 @@ public class SecondActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /*
+    THE BUTTON IS NOT WORKING ON THE CONTACT PAGE! NOT SURE WHY IT HAS SUDDENLY STOPPED!
+    I will get back to work on why it doesn't want to work. --Chantelle
+     */
+
     // Buttons that Have a Purpose --Chantelle
     protected void onStart() {
         super.onStart();
@@ -70,19 +75,36 @@ public class SecondActivity extends AppCompatActivity {
         resultButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                Log.d(TAG, "Button Clicked");
+                Log.d(TAG, "The Submit Button Has Been Clicked by User!");
                 // Get the Edit Texts --Chantelle
-                EditText NameText = ((View)view.getParent()).findViewById(R.id.editText_Name);
+                EditText cFirstName = ((View)view.getParent()).findViewById(R.id.creditor_first_name_text);
+                EditText cLastName = ((View)view.getParent()).findViewById(R.id.credit_last_name_text);
                 EditText TotalText = ((View)view.getParent()).findViewById(R.id.editText_Total);
+//                EditText dFirstName = ((View)view.getParent()).findViewById(R.id.debt_first_name_text);
+//                EditText dLastName = ((View)view.getParent()).findViewById(R.id.debt_last_name_text);
+//                EditText dEmail = ((View)view.getParent()).findViewById(R.id.debt_email_text);
+//                EditText dPhone = ((View)view.getParent()).findViewById(R.id.debt_phone_number);
 
                 // Convert Variables to a String
-                String userName = NameText.getText().toString();
+                String firstName = cFirstName.getText().toString();
+                String lastName = cLastName.getText().toString();
                 String userTotal = TotalText.getText().toString();
+//                String nameFirst = dFirstName.getText().toString();
+//                String nameLast = dLastName.getText().toString();
+//                String email = dEmail.getText().toString();
+//                String phone = dPhone.getText().toString();
 
-                // Toast to Display the User Inputs
-                Toast.makeText(SecondActivity.this, "Your name is " + userName + ". Your" +
-                        " total is " + userTotal, Toast.LENGTH_LONG).show();
+//                // Toast to Display the User Inputs
+//                Toast.makeText(SecondActivity.this,"Your name is " +
+//                        firstName + " " + lastName + "." + "\n" + "And " + nameFirst + " " +
+//                        nameLast + " owes you " + userTotal + "." + "\n" + "There contact information is " +
+//                        email + " , and their phone number is " + phone, Toast.LENGTH_LONG).show();
+
+                Toast.makeText(view.getContext(), "First Name: " + firstName + "Last Name: " +
+                        lastName + "Total = " + userTotal,Toast.LENGTH_LONG).show();
+
             }
         });
     }
+
 }
