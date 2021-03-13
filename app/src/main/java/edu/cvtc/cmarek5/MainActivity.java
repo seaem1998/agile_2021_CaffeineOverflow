@@ -121,6 +121,16 @@ public class MainActivity extends AppCompatActivity {
                 intentActivityFour.putExtra(TAG, "To Fourth Activity");
                 startActivity(intentActivityFour);
                 return true;
+            case R.id.action_salex_tax:
+                Intent intentSalesTax = new Intent(MainActivity.this, SalesTaxCalcActivity.class);
+                intentSalesTax.putExtra(TAG, "To Sales Tax Calculator");
+                startActivity(intentSalesTax);
+                return true;
+            case R.id.action_tip_calc:
+                Intent intentTipCalc = new Intent(MainActivity.this, TipCalcActivity.class);
+                intentTipCalc.putExtra(TAG, "To Tip Calculator");
+                startActivity(intentTipCalc);
+                return true;
             default:
                 // Do nothing
         }

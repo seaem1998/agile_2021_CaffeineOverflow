@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoanApplication">
         <activity
+            android:name=".TipCalcActivity"
+            android:label="Tip Calculator"></activity>
+        <activity
+            android:name=".SalesTaxCalcActivity"
+            android:label="Sales Tax Calculator"></activity>
+        <activity
             android:name=".FifthActivity"
-            android:label="Budget Planner"></activity>
+            android:label="Budget Planner" />
         <activity
             android:name=".FourthActivity"
-            android:label="Budget Planner"/>
+            android:label="Budget Planner" />
         <activity
             android:name=".ThirdActivity"
-            android:label="Debts"/>
+            android:label="Debts" />
         <activity
             android:name=".SecondActivity"
             android:label="@string/activity2_name">

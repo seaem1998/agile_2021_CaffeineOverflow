@@ -17,6 +17,12 @@
     <!-- Buttons -->
     <string name="button_contact_page">To Contacts</string>
     <string name="button_budget_submit">CREATE BUDGET</string>
+    <string name="button_submit">Submit</string>
+
+    <!-- Sales Tax Calculator Strings -->
+    <string name="tax_amount_hint">0.0%</string>
+    <string name="calc_total_label">Cost of Item(s):</string>
+    <string name="state_sale_tax_label">State Salex Tax:</string>
 
     <!-- Contact Page Strings -->
     <string name="action_contact_main_label">Contacts</string>
@@ -34,6 +40,7 @@
     <string name="phone_number_hint">000-000-0000</string>
     <string name="contact_phone_number">Phone Number:</string>
     <string name="contact_email">Email:</string>
+    <string name="tip_amount_label">Your Tip Total:</string>
 
     <string-array name="labels_array">
         <item>Contact1</item>
