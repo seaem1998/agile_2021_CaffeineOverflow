@@ -14,7 +14,7 @@ import com.github.mikephil.charting.data.PieEntry;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FifthActivity extends AppCompatActivity {
+public class BudgetChartActivity extends AppCompatActivity {
 
 
     PieChart pieChart;

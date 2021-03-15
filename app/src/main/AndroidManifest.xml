@@ -16,16 +16,16 @@
             android:name=".SalesTaxCalcActivity"
             android:label="Sales Tax Calculator"></activity>
         <activity
-            android:name=".FifthActivity"
+            android:name=".BudgetChartActivity"
             android:label="Budget Planner" />
         <activity
-            android:name=".FourthActivity"
+            android:name=".BudgetCreatorActivity"
             android:label="Budget Planner" />
         <activity
-            android:name=".ThirdActivity"
+            android:name=".DebtsActivity"
             android:label="Debts" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".ContactActivity"
             android:label="@string/activity2_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

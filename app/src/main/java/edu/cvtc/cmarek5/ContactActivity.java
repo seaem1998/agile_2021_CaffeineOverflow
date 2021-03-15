@@ -13,9 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.jar.Attributes;
-
-public class SecondActivity extends AppCompatActivity {
+public class ContactActivity extends AppCompatActivity {
 
     private static final String TAG = "From Activity 2";
 
@@ -39,17 +37,17 @@ public class SecondActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.action_home:
-                Intent intentActivityTwo = new Intent(SecondActivity.this, MainActivity.class);
+                Intent intentActivityTwo = new Intent(ContactActivity.this, MainActivity.class);
                 intentActivityTwo.putExtra(TAG, "To Main Activity");
                 startActivity(intentActivityTwo);
                 return true;
             case R.id.action_activity_three:
-                Intent intentActivityThree = new Intent(SecondActivity.this, ThirdActivity.class);
+                Intent intentActivityThree = new Intent(ContactActivity.this, DebtsActivity.class);
                 intentActivityThree.putExtra(TAG, "To Third Activity");
                 startActivity(intentActivityThree);
                 return true;
             case R.id.action_activity_four:
-                Intent intentActivityFour = new Intent(SecondActivity.this, FourthActivity.class);
+                Intent intentActivityFour = new Intent(ContactActivity.this, BudgetCreatorActivity.class);
                 intentActivityFour.putExtra(TAG, "To Fourth Activity");
                 startActivity(intentActivityFour);
                 return true;
@@ -91,7 +89,7 @@ public class SecondActivity extends AppCompatActivity {
                 String phone = dPhone.getText().toString();
 
                 // Toast to Display the User Inputs
-                Toast.makeText(SecondActivity.this,"Your name is " +
+                Toast.makeText(ContactActivity.this,"Your name is " +
                         firstName + " " + lastName + "." + "\n" + "And " + nameFirst + " " +
                         nameLast + " owes you " + userTotal + "." + "\n" + "There contact information is " +
                         email + " , and their phone number is " + phone, Toast.LENGTH_LONG).show();

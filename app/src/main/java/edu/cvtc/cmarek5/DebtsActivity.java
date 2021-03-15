@@ -13,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class ThirdActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class DebtsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,17 +72,17 @@ public class ThirdActivity extends AppCompatActivity implements AdapterView.OnIt
 
         switch (item.getItemId()) {
             case R.id.action_home:
-                Intent intentActivityHome = new Intent(ThirdActivity.this, MainActivity.class);
+                Intent intentActivityHome = new Intent(DebtsActivity.this, MainActivity.class);
                 intentActivityHome.putExtra("From Third Activity", "To Main Activity");
                 startActivity(intentActivityHome);
                 return true;
             case R.id.action_activity_two:
-                Intent intentActivityTwo = new Intent(ThirdActivity.this, SecondActivity.class);
+                Intent intentActivityTwo = new Intent(DebtsActivity.this, ContactActivity.class);
                 intentActivityTwo.putExtra("From Third Activity", "To Second Activity");
                 startActivity(intentActivityTwo);
                 return true;
             case R.id.action_activity_four:
-                Intent intentActivityFour = new Intent(ThirdActivity.this, FourthActivity.class);
+                Intent intentActivityFour = new Intent(DebtsActivity.this, BudgetCreatorActivity.class);
                 intentActivityFour.putExtra("From Third Activity", "To Fourth Activity");
                 startActivity(intentActivityFour);
                 return true;

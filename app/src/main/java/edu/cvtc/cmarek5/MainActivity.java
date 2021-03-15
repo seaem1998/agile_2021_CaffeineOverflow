@@ -10,7 +10,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d(TAG, "Button Clicked");
                 // This act like Navigation, Takes you to the second activity
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                startActivity(new Intent(MainActivity.this, ContactActivity.class));
             }
         });
 
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Convert Variables to a String
                 //an issue with converting the edit texts to strings
-                // will crash the whole app
+                // will crash the whole app - Josh
 
                 //String userName = NameText.getText().toString();
                // String userTotal = TotalText.getText().toString();
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 mContactInfo = "Contacts: " ;
 
 
-                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+                Intent intent = new Intent(MainActivity.this, DebtsActivity.class);
                 intent.putExtra(EXTRA_MESSAGE, mContactInfo);
 
                 startActivity(intent);
@@ -92,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void LaunchFourthActivity(View view) {
-        startActivity(new Intent(MainActivity.this, FourthActivity.class));
+        startActivity(new Intent(MainActivity.this, BudgetCreatorActivity.class));
     }
 
     // For the Main Menu --Chantelle
@@ -107,17 +106,17 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.action_activity_two:
-                Intent intentActivityTwo = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intentActivityTwo = new Intent(MainActivity.this, ContactActivity.class);
                 intentActivityTwo.putExtra(TAG, "To Second Activity");
                 startActivity(intentActivityTwo);
                 return true;
             case R.id.action_activity_three:
-                Intent intentActivityThree = new Intent(MainActivity.this, ThirdActivity.class);
+                Intent intentActivityThree = new Intent(MainActivity.this, DebtsActivity.class);
                 intentActivityThree.putExtra(TAG, "To Third Activity");
                 startActivity(intentActivityThree);
                 return true;
             case R.id.action_activity_four:
-                Intent intentActivityFour = new Intent(MainActivity.this, FourthActivity.class);
+                Intent intentActivityFour = new Intent(MainActivity.this, BudgetCreatorActivity.class);
                 intentActivityFour.putExtra(TAG, "To Fourth Activity");
                 startActivity(intentActivityFour);
                 return true;
