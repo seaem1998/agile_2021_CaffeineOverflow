@@ -24,6 +24,10 @@
     <string name="calc_total_label">Cost of Item(s):</string>
     <string name="state_sale_tax_label">State Salex Tax:</string>
 
+    <!-- Tip Calculator -->
+    <string name="tip_amount_label">Tip Amount:</string>
+    <string name="seekBar_tip_label">25%</string>
+
     <!-- Contact Page Strings -->
     <string name="action_contact_main_label">Contacts</string>
     <string name="first_name_label">First Name:</string>
@@ -40,7 +44,8 @@
     <string name="phone_number_hint">000-000-0000</string>
     <string name="contact_phone_number">Phone Number:</string>
     <string name="contact_email">Email:</string>
-    <string name="tip_amount_label">Your Tip Total:</string>
+    <string name="seekBar_hint">You need to move the Seek Bar Thumb before calculating.</string>
+
 
     <string-array name="labels_array">
         <item>Contact1</item>
