@@ -5,7 +5,7 @@
 
     <string name="activity2_name">Contact</string>
     <string name="debts_page">Debts Page</string>
-    <string name="display_debts">Display Debts</string>
+    <string name="display_debts">Debts</string>
     <string name="test">test test test test test test test test test test</string>
     <string name="contacts">Contacts:</string>
     <string name="category1">Category</string>
@@ -13,10 +13,14 @@
     <string name="category4">Category</string>
     <string name="category3">Category</string>
     <string name="category2">Category</string>
+    <string name="button_reason_label">These Buttons Take You to the Page it Indicates. Or You Can Use the Navigation or Nav Icons.</string>
+    <string name="about_app_label">About the App:</string>
+    <string name="the_app_label">A Financial App made by Caffeine Overflow. In this app you can: Create a Budget, Create Contacts, Keep Track of Any Debts. A Sales Tax and Tip Calculator are also integrated
+    into the app. Finally, there is an in-app day or night mode feature.</string>
 
     <!-- Buttons -->
-    <string name="button_contact_page">To Contacts</string>
-    <string name="button_budget_submit">CREATE BUDGET</string>
+    <string name="button_contact_page">Contacts</string>
+    <string name="button_budget_submit">Budget</string>
     <string name="button_submit">Submit</string>
 
     <!-- Sales Tax Calculator Strings -->
@@ -27,6 +31,7 @@
     <!-- Tip Calculator -->
     <string name="tip_amount_label">Tip Amount:</string>
     <string name="seekBar_tip_label">25%</string>
+    <string name="seekBar_hint">You need to move the Seek Bar Thumb before calculating.</string>
 
     <!-- Contact Page Strings -->
     <string name="action_contact_main_label">Contacts</string>
@@ -44,7 +49,11 @@
     <string name="phone_number_hint">000-000-0000</string>
     <string name="contact_phone_number">Phone Number:</string>
     <string name="contact_email">Email:</string>
-    <string name="seekBar_hint">You need to move the Seek Bar Thumb before calculating.</string>
+
+    <!-- Night/Day Mode String -->
+    <string name="night_mode">Night Mode</string>
+    <string name="day_mode">Day Mode</string>
+    <string name="logo_description">Green circle with backwards dollar sign inside</string>
 
 
     <string-array name="labels_array">

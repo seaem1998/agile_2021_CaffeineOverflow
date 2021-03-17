@@ -1,6 +1,7 @@
 package edu.cvtc.cmarek5;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,7 +50,17 @@ public class BudgetCreatorActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu,menu);
+
+        // Night/Day Mode Code --Chantelle
+        int nightMode = AppCompatDelegate.getDefaultNightMode();
+        if(nightMode == AppCompatDelegate.MODE_NIGHT_YES) {
+            menu.findItem(R.id.night_mode).setTitle(R.string.day_mode);
+        } else  {
+            menu.findItem(R.id.night_mode).setTitle(R.string.night_mode);
+        }
+
         return true;
+
     }
 
     // The intent that takes us to the specific activity (Main Menu) --Chantelle
@@ -71,10 +82,37 @@ public class BudgetCreatorActivity extends AppCompatActivity {
                 intentActivityTwo.putExtra("From Fourth Activity", "To Second Activity");
                 startActivity(intentActivityTwo);
                 return true;
+            case R.id.action_salex_tax:
+                Intent intentSalesTax = new Intent(BudgetCreatorActivity.this, SalesTaxCalcActivity.class);
+                intentSalesTax.putExtra("From Fourth Activity", "To Sales Tax Calculator");
+                startActivity(intentSalesTax);
+                return true;
+            case R.id.action_tip_calc:
+                Intent intentTipCalc = new Intent(BudgetCreatorActivity.this, TipCalcActivity.class);
+                intentTipCalc.putExtra("From Fourth Activity", "To Tip Calculator");
+                startActivity(intentTipCalc);
+                return true;
             default:
                 // Do nothing
         }
-        return super.onOptionsItemSelected(item);
+
+        //Check if the correct item was clicked (NIGHT/DAY MODE CODE) --Chantelle
+        if(item.getItemId() == R.id.night_mode) {
+
+            //Get night mode state of app
+            int nightMode = AppCompatDelegate.getDefaultNightMode();
+            //Set theme mode for restarted activity
+            if (nightMode == AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            }
+            // Recreate the activity for the theme change to take effect
+            recreate();
+        }
+        return true;
+
+        //return super.onOptionsItemSelected(item);
     }
 
 }
